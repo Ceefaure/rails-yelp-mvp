@@ -1,0 +1,22 @@
+@import "utilities";
+@import "footer";
+@import "navbar";
+
+.container {
+  width: 75%;
+}
+
+.lign {
+  padding-top: 10px;
+  padding-left: 50px;
+  margin: auto;
+  border-top: 1px dotted black;
+}
+
+.col-md-4 {
+  padding: auto;
+}
+
+.btn {
+  margin-bottom: 25px;
+}

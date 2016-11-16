@@ -1,0 +1,20 @@
+<div class = "container">
+  <div class="row">
+    <div class="col-md-6 col-sm-offset-3 text-center">
+      <h1>Restaurants</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-offset-3 text-center">
+      <%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+
+  <% @restaurants.each do |restaurant| %>
+    <div class="row lign">
+      <div class="col-md-6"><p class = "restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant) %></p></div>
+      <div class="col-md-6"><p><%= restaurant.address %></p></div>
+    </div>
+  <% end %>
+</div>
+
